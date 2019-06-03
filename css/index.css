@@ -131,7 +131,7 @@ html {
   scroll-behavior: smooth;
 }
 header {
-  height: 40px;
+  height: 60px;
   background-color: #6C72FF;
 }
 nav {
@@ -140,30 +140,117 @@ nav {
   justify-content: space-around;
   align-items: center;
   font-size: 13px;
-  text-decoration: none;
+  margin-left: 50%;
 }
 nav a {
   color: #E6E6E6;
+  text-decoration: none;
+}
+a.btn-login {
+  background-color: #E6E6E6;
+  border: #E6E6E6;
+  color: #6C72FF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+footer {
+  height: 60px;
+  background-color: #6C72FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body {
+  font-family: 'Bitter', serif;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+}
+div.wrapper {
+  width: 100%;
+  overflow-x: hidden;
 }
 section.header-banner {
   display: flex;
-  height: 100%;
-  position: absolute;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  text-align: left;
+  overflow-x: hidden;
+  height: 100vh;
+}
+section.header-banner img.logo {
+  width: 500px;
+  padding: 40px;
+}
+section.header-banner div.content-left {
+  margin: 0 auto;
+  padding: 40px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 section.header-banner img.how-to-header-img {
-  height: 100%;
+  margin: 0 auto;
   width: 50%;
   object-fit: cover;
 }
-section.header-banner div.content {
+section.header-banner #explore {
+  font-size: 30px;
+  color: #6C72FF;
+  font-weight: bold;
+}
+section#second {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
+  overflow-x: hidden;
+  height: 90vh;
+}
+section#second div.image-left {
+  width: 50%;
+  background-color: #BABEFC;
+}
+section#second div.content-right {
+  margin: 0 auto;
+  padding: 40px;
+  width: 50%;
   display: flex;
   flex-direction: column;
-  width: 50%;
+  align-items: center;
+  text-align: center;
 }
 /* Button */
 .button {
   background-color: #6C72FF;
   border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+a.btn-signup {
+  background-color: #FFAE66;
+  border: #E6E6E6;
   color: white;
   padding: 15px 32px;
   text-align: center;
