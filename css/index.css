@@ -190,8 +190,8 @@ section.header-banner {
   height: 100vh;
 }
 section.header-banner img.logo {
-  width: 500px;
-  padding: 40px;
+  width: 200px;
+  padding: 40px 40px 40px 0;
 }
 section.header-banner div.content-left {
   margin: 0 auto;
