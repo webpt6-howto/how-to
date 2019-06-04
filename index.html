@@ -6,78 +6,105 @@
         <title>How-to Home</title>
        
         <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-        <link href="https://fonts.googleapis.com/css?family=Alegreya SC" rel="stylesheet">
+
+        <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+
         <link rel="stylesheet" href="css/index.css">
 	</head>
 	<body class="is-preload">
       <div class="container">
         <header>
-            <nav>
-                <a href="index.html">Home</a>
-                <a href="sign up.html">Sign Up</a>
-                <a href="create.html">Create</a>
-                <a href="login.html">Login</a>
-            </nav>
-        </header>
-        <div id="wrapper" class="divided">
+
+          <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="login.html">Login</a>
+            <a href="sign up.html" class="btn-signup">Sign Up</a>     
+          </nav>
+       </header>
+
+       <div class="wrapper">
 
             <!-- One -->
-              <section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-                <article class="content">
-                  <h1>How-to</h1>
-                  <img class="how-to-header-img" src="images\Life Hacks.jpg" alt="life-hack">
-                  <p class="major">Have a life hack?</p>
-                  <P> Share it now! on How-to. Posts with the most likes/reviews/tried will be at the top of the feed. Simplifying life for everyone, one hack at a time.</P>
-                  <ul class="actions stacked">
-                      <li><a href="sign up.html" class="button big wide smooth-scroll-middle">Sign Up!</a></li>
-                    </ul>
-                    <ul class="actions stacked">
-                        <h2>Already a member?</h2>
-                        <li><a href="login.html" class="button big wide smooth-scroll-middle">Login</a></li>
-                    </ul>
-                  </section>
-                  <section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in" id="first">
-                    <article class="content">
-                      <img class="how-to-img" src="images\Create.jpg" alt="create">
-                      <h3>Create your own How-to guide</h3>
-                      <ul class="actions stacked">
-                          <li><a href="create.html" class="button big wide smooth-scroll-middle">Create Guide Here!</a></li>
-                        </ul>
-                    </article>  
-                  </section>
-                  <section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-                      <article class="content">
-                        <img class="life-hack-img" src="images\sunnylifehacks.png" alt="life hack">
-                        <ul class="actions stacked">
-                            <li><a href="https://www.lifehack.org/articles/lifestyle/100-life-hacks-that-make-life-easier.html" class="button big wide smooth-scroll-middle">More Life Hacks Here!</a></li>
-                          </ul>
-                        </article>
-                  </section>
-                  <section class="main-contents">
-                    <article class="content">
-                    <img class="search-img" src="images\search.jpg" alt="search">
-                      <h2>Search Guides</h2>
-                      <p>Filter search results by:</p>
-                      <form class="form" action="">
-                          <textarea name="" rows="1" cols="40"></textarea><br>
-                      </form>
-                      <ul class="actions stacked">
-                          <li><a href="" class="button big wide smooth-scroll-middle">Keyword</a></li>
-                          <li><a href="" class="button big wide smooth-scroll-middle">Username</a></li>
-                        </ul>
-                    </article>
-                    <!-- <article class="content">
-                      <img class="content-img" src="images\Pencil holder.jpg" alt="pencil holder">
-                        <h2>Pencil Holder Guide</h2>
-                          <button class="learn">Learn More</button>
-                    </article> -->
-                  </section>
-                  <footer>
-                    <div class="footer-content">
-                        <p class="copyright">Copyright 2019 How-to, LLC All Rights Reserved</p>
-                    </div>
-                  </footer>
-        </div>
+              <section class="header-banner">
+
+                <div class="content-left">
+                  <img class="logo" src="img\howToLogo.png" alt="Logo">
+                  <h1>Have a life hack?</h1>
+                  <h1>Share it now! on How-to</h1><br><br>
+                  <h2>Simplifying life for everyone,<br>one hack at a time.</h2><br>
+                  <a href="sign up.html" class="btn-signup">Sign Up!</a><br>
+                  <h2>Already a member?</h2><br>
+                  <a href="login.html" class="button">Login</a><br>
+          
+                  <a href="#second" id="explore">Explore How-To <br>&#x2193</a>
+
+                </div>
+
+                <img class="how-to-header-img" src="img/LandingPageImage.jpg" alt="book image">
+                
+              </section>
+       
+        
+       <section id="second">
+          <div class=image-left>
+            <h2> Creator View</h2> <!--Will toggle with "User view" and "user view image" using JS-->
+            <img src="" alt="phone image">
+          </div>
+
+          <div class="content-right">
+
+            <h1>Create How-To Guide</h1>
+            <ul>
+              <li>**</li>
+              <li>**</li>
+              <li>**</li>
+            </ul>
+        
+            <a href="create.html" class="button">Try It!</a> <!--in addition to  link, maybe toggle phone screen img on left using js-->
+
+            
+            <h1>Use How-to Guide</h1>
+
+            <ul>
+                <li>**</li>
+                <li>**</li>
+                <li>**</li>
+              </ul>
+
+
+            <a href="create.html" class="button">Try It!</a>
+            
+                
+                    
+          </div>
+          
+           
+               
+                
+        
+
+            
+      </section>
+
+          <!-- <section class="main-contents">
+            <article class="content">
+            <img class="content-img" src="images\Camper stove.jpg" alt="camper stove">
+              <h2>Camper Stove Guide</h2>
+                <button class="learn">Learn More</button>
+            </article>
+            <article class="content">
+              <img class="content-img" src="images\Pencil holder.jpg" alt="pencil holder">
+                <h2>Pencil Holder Guide</h2>
+                  <button class="learn">Learn More</button>
+            </article>
+          </section> -->
+          <footer>
+            <div class="footer-content">
+                <p class="copyright">Copyright 2019 How-to, LLC All Rights Reserved</p>
+            </div>
+          </footer>
       </div>
     </body>
 </html>
