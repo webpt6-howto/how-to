@@ -130,41 +130,6 @@ table {
 html {
   scroll-behavior: smooth;
 }
-header {
-  height: 60px;
-  background-color: #6C72FF;
-}
-nav {
-  height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 13px;
-  margin-left: 50%;
-}
-nav a {
-  color: #E6E6E6;
-  text-decoration: none;
-}
-a.btn-login {
-  background-color: #E6E6E6;
-  border: #E6E6E6;
-  color: #6C72FF;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-footer {
-  height: 60px;
-  background-color: #6C72FF;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
 body {
   font-family: 'Bitter', serif;
 }
@@ -175,9 +140,62 @@ h1 {
 h2 {
   font-size: 30px;
 }
-div.wrapper {
+div.container {
   width: 100%;
   overflow-x: hidden;
+}
+/* Button */
+.button {
+  background-color: #6C72FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+a.btn-signup {
+  background-color: #FFAE66;
+  border: #E6E6E6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+header {
+  height: 60px;
+  background-color: #6C72FF;
+}
+header nav {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 13px;
+  margin-left: 50%;
+}
+header nav a {
+  color: #E6E6E6;
+  text-decoration: none;
+}
+header a.btn-login {
+  background-color: #E6E6E6;
+  border: #E6E6E6;
+  color: #6C72FF;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
 }
 section.header-banner {
   display: flex;
@@ -222,42 +240,28 @@ section#second {
   text-align: right;
   overflow-x: hidden;
   height: 90vh;
+  background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
 }
-section#second div.image-left {
-  width: 50%;
-  background-color: #BABEFC;
-}
-section#second div.content-right {
-  margin: 0 auto;
-  padding: 40px 0;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-/* Button */
-.button {
+/* div.image-left {
+		width: 50%;
+		background-color: #BABEFC;
+	}
+	div.content-right {
+	margin: 0 auto;
+    padding: 40px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	}
+
+
+*/
+footer {
+  height: 60px;
   background-color: #6C72FF;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-a.btn-signup {
-  background-color: #FFAE66;
-  border: #E6E6E6;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
