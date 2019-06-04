@@ -195,7 +195,7 @@ section.header-banner img.logo {
 }
 section.header-banner div.content-left {
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
   width: 50%;
   display: flex;
   flex-direction: column;
@@ -228,7 +228,7 @@ section#second div.image-left {
 }
 section#second div.content-right {
   margin: 0 auto;
-  padding: 40px;
+  padding: 40px 0;
   width: 50%;
   display: flex;
   flex-direction: column;
