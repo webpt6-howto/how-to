@@ -147,6 +147,9 @@ nav a {
   color: #E6E6E6;
   text-decoration: none;
 }
+nav .create-container {
+    font-size: 13px;
+}
 a.btn-login {
   background-color: #E6E6E6;
   border: #E6E6E6;
@@ -172,14 +175,18 @@ body {
 h1 {
   font-size: 40px;
   font-weight: bold;
+  align-self: center;
+  margin-left: 2rem;
 }
 h2 {
   font-size: 30px;
+  margin-left: 2rem;
 }
 div.wrapper {
   width: 100%;
   overflow-x: hidden;
 }
+
 section.header-banner {
   display: flex;
   align-items: stretch;
@@ -190,6 +197,7 @@ section.header-banner {
   overflow-x: hidden;
   height: 100vh;
 }
+
 
 section#second div.image-left {
   width: 50%;
@@ -204,6 +212,9 @@ section#second div.content-right {
   align-items: center;
   text-align: center;
 }
+.how-to-header-img {
+  width: 50%;
+}
 /* Button */
 .button {
   background-color: #6C72FF;
@@ -216,6 +227,7 @@ section#second div.content-right {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-left: 2rem;
 }
 a.btn-signup {
   background-color: #FFAE66;
@@ -228,5 +240,10 @@ a.btn-signup {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+  margin-left: 2rem;
+}
+
+.content-left a {
+    margin-left: 2rem;
 }
 
