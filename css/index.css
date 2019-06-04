@@ -190,39 +190,7 @@ section.header-banner {
   overflow-x: hidden;
   height: 100vh;
 }
-section.header-banner img.logo {
-  width: 200px;
-  padding: 40px 40px 40px 0;
-}
-section.header-banner div.content-left {
-  margin: 0 auto;
-  padding: 40px 0;
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-}
-section.header-banner img.how-to-header-img {
-  margin: 0 auto;
-  width: 50%;
-  object-fit: cover;
-}
-section.header-banner #explore {
-  font-size: 30px;
-  color: #6C72FF;
-  font-weight: bold;
-}
-section#second {
-  display: flex;
-  align-items: stretch;
-  flex-direction: row;
-  justify-content: flex-end;
-  position: relative;
-  text-align: right;
-  overflow-x: hidden;
-  height: 90vh;
-}
+
 section#second div.image-left {
   width: 50%;
   background-color: #BABEFC;
