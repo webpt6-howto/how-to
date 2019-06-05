@@ -1,0 +1,28 @@
+.tabs-container {
+   width: 40%;
+    .topics {
+      height: 70vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: center;
+      .tab {
+        width: 50%;
+        color: black;
+        background-color: @orange;
+        font-size: 12px;
+        letter-spacing: 2px;
+        cursor: pointer;
+        font-weight: bold;
+        border: black;
+        &:hover {
+          color: white;
+        }
+      }
+      .active-tab {
+        background-color: @grey ;
+        color: black ;
+        border: none;
+      }
+    }
+  }
