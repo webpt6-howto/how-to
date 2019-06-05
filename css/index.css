@@ -310,6 +310,7 @@ section#second {
     text-align: center;
 	}
 
+/*About*/
 .row {
     line-height: 2rem;
     justify-content: center;
@@ -333,17 +334,66 @@ ul {
     margin: 0 0 2rem 0;
 }
 
+
 ul.icons {
     cursor: default;
     list-style: none;
     padding-left: 0;
 }
 
-.icon {
+/* .icon {
     text-decoration: none;
     border-bottom: none;
     position: relative;
     text-align: center;
+<<<<<<< HEAD
+} */
+
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/*Login*/
+.login-container nav {
+    font-size: 13px;
+}
+.login-form .form1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 20px;
+    border: none;
+    width: 200px;
+    line-height: 1rem;
+}
+
+/*Sign Up*/
+.signup-form {
+    line-height: 2rem;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: space-between;
+    padding: 20px;
+    border: none;
+    width: 200px;
+    line-height: 1.5rem;
+}
+
+/*Create*/
+.how-to-img {
+    width: 30%;
+    
+}
+=======
 }
 
 */
@@ -355,3 +405,4 @@ footer {
   align-items: center;
 }
 
+>>>>>>> master
