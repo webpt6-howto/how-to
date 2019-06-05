@@ -294,19 +294,7 @@ section#second {
   background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
 
 }
-/* div.image-left {
-		width: 50%;
-		background-color: #BABEFC;
-	}
-	div.content-right {
-	margin: 0 auto;
-    padding: 40px 0;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-	}
+
 
 /*About*/
 .row {
@@ -437,5 +425,52 @@ footer {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+/*Media Queries(Tablet)*/
+@media (max-width:800px) {
+.container {
+    width: 100%;
+  }
+  header nav {
+		justify-content: space-around;
+    margin-left: 0;
+  }
+  nav a {
+    margin: 20px;
+  }
+  section.header-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  } 
+  section.header-banner div.content-left {
+    display: flex;
+    flex-direction: column;
+  }
+  section.header-banner img.how-to-header-img {
+    width: 100%;
+  }
+}
+
+@media (max-width:800px) {
+  section.create-banner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  } 
+  section.create-banner .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  section.create-banner img.how-to-img {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
 }
 
