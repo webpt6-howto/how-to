@@ -1,4 +1,3 @@
-
 /* Reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -131,11 +130,50 @@ table {
 html {
   scroll-behavior: smooth;
 }
+body {
+  font-family: 'Bitter', serif;
+}
+h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+h2 {
+  font-size: 30px;
+}
+div.container {
+  width: 100%;
+  overflow-x: hidden;
+}
+/* Button */
+.button {
+  background-color: #6C72FF;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+a.btn-signup {
+  background-color: #FFAE66;
+  border: #E6E6E6;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 header {
   height: 60px;
   background-color: #6C72FF;
 }
-nav {
+header nav {
   height: 100%;
   display: flex;
   justify-content: space-around;
@@ -143,12 +181,15 @@ nav {
   font-size: 13px;
   margin-left: 50%;
 }
-nav a {
+header nav a {
   color: #E6E6E6;
   text-decoration: none;
 }
 
 a.btn-login {
+=======
+header a.btn-login {
+
   background-color: #E6E6E6;
   border: #E6E6E6;
   color: #6C72FF;
@@ -201,8 +242,13 @@ section.header-banner {
 section#second div.image-left {
   width: 50%;
   background-color: #BABEFC;
+
+section.header-banner img.logo {
+  width: 200px;
+  padding: 40px 40px 40px 0;
+
 }
-section#second div.content-right {
+section.header-banner div.content-left {
   margin: 0 auto;
   padding: 40px 0;
   width: 50%;
@@ -211,16 +257,15 @@ section#second div.content-right {
   align-items: center;
   text-align: center;
 }
-.how-to-header-img {
+section.header-banner img.how-to-header-img {
+  margin: 0 auto;
   width: 50%;
+  object-fit: cover;
 }
-/* Button */
-.button {
-  background-color: #6C72FF;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
+section.header-banner .explore {
+  font-size: 30px;
+  color: #6C72FF;
+  font-weight: bold;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
@@ -239,6 +284,31 @@ a.btn-signup {
   margin: 4px 2px;
   cursor: pointer;
 }
+section#second {
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  justify-content: flex-end;
+  position: relative;
+  text-align: right;
+  overflow-x: hidden;
+  height: 90vh;
+  background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
+
+}
+/* div.image-left {
+		width: 50%;
+		background-color: #BABEFC;
+	}
+	div.content-right {
+	margin: 0 auto;
+    padding: 40px 0;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+	}
 
 .row {
     line-height: 2rem;
@@ -275,3 +345,13 @@ ul.icons {
     position: relative;
     text-align: center;
 }
+
+*/
+footer {
+  height: 60px;
+  background-color: #6C72FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
