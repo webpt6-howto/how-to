@@ -185,8 +185,6 @@ header nav a {
   color: #E6E6E6;
   text-decoration: none;
 }
-
-
 header a.btn-login {
   background-color: #E6E6E6;
   border: #E6E6E6;
@@ -199,29 +197,6 @@ header a.btn-login {
   margin: 4px 2px;
   cursor: pointer;
 }
-footer {
-  height: 60px;
-  background-color: #6C72FF;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body {
-  font-family: 'Bitter', serif;
-}
-h1 {
-  font-size: 40px;
-  font-weight: bold;
-  align-self: center;
-}
-h2 {
-  font-size: 30px;
-}
-div.wrapper {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 section.header-banner {
   display: flex;
   align-items: stretch;
@@ -232,19 +207,9 @@ section.header-banner {
   overflow-x: hidden;
   height: 100vh;
 }
-
-.header-banner .content-left {
-    padding: 7rem 7rem 7rem 7rem;
-}
-
-section#second div.image-left {
-  width: 50%;
-  background-color: #BABEFC;
-}
 section.header-banner img.logo {
   width: 200px;
   padding: 40px 40px 40px 0;
-
 }
 section.header-banner div.content-left {
   margin: 0 auto;
@@ -265,22 +230,35 @@ section.header-banner .explore {
   color: #6C72FF;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
-a.btn-signup {
-  background-color: #FFAE66;
-  border: #E6E6E6;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
+.tooltip {
+  position: relative;
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  border: none;
+}
+.tooltip a {
+  text-decoration-style: dashed;
+  text-decoration-color: #FFAE66;
+  color: #131313;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  font-size: 14px;
+  background-color: transparent;
+  color: #131313;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-family: cursive;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
 }
 section#second {
   display: flex;
@@ -290,55 +268,51 @@ section#second {
   position: relative;
   text-align: right;
   overflow-x: hidden;
-  height: 90vh;
+  height: 693px;
   background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
-
 }
-
-
-/*About*/
-.row {
-    line-height: 2rem;
-    justify-content: center;
+footer {
+  height: 60px;
+  background-color: #6C72FF;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-.row .logo {
-    width: 200px;
-    padding: 40px 40px 40px 0;
+.tabs-container {
+  width: 40%;
+  height: 693px;
 }
-
-.row h2 {
-    margin: 0 1rem;
+.tabs-container .topics {
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
-
-.row .inner {
-    margin: 0 1rem;  
-}
-
-ul {
-    margin: 0 0 2rem 0;
-}
-
-ul.icons li {
-  margin: 10px 0 10px 10px;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  background-color: white;
-  position: relative;
+.tabs-container .topics .tab {
   width: 50%;
-  height: 30%;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
-  padding: 0.5rem;
+  color: black;
+  background-color: transparent;
+  font-size: 15px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+}
+.tabs-container .topics .tab:hover {
+  color: white;
+}
+.tabs-container .topics .active-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E6E6E6;
+  font-size: 20px ;
+  border: none;
+  height: 40px;
 }
 
-h3 {
-  font-size: 1.5rem;
-  text-decoration-line: underline;
-}
-
-ul.icons p {
-  font-style: italic;
-}
 
 ul.icons {
     cursor: default;
@@ -449,9 +423,37 @@ div.create-container img.how-to-img {
 footer {
   height: 60px;
   background-color: #6C72FF;
+
+.cards-container {
+  display: block;
+  width: 60%;
+  height: 690px;
+  overflow: hidden;
+}
+.cards-container .card {
+  background-color: transparent;
+  margin-top: 20px;
+  width: 100%;
+  border: none;
+
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-direction: column;
+}
+.cards-container .card .headline {
+  font-size: 25px;
+}
+.cards-container .card img.phone {
+  width: 35%;
+  height: 610px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px;
+}
+.cards-container div.two-phones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 /*Media Queries(Tablet)*/
