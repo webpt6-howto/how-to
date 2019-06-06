@@ -231,6 +231,35 @@ section.header-banner .explore {
   font-weight: bold;
   text-decoration: none;
 }
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border: none;
+}
+.tooltip a {
+  text-decoration-style: dashed;
+  text-decoration-color: #FFAE66;
+  color: #131313;
+}
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 100%;
+  font-size: 14px;
+  background-color: transparent;
+  color: #131313;
+  display: flex;
+  justify-content: center;
+  font-style: italic;
+  font-family: cursive;
+  border-radius: 6px;
+  padding: 5px 0;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
 section#second {
   display: flex;
   align-items: stretch;
@@ -241,136 +270,7 @@ section#second {
   overflow-x: hidden;
   height: 693px;
   background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
-
-
 }
-
-
-/*About*/
-.row {
-    line-height: 2rem;
-    justify-content: center;
-}
-.row .logo {
-    width: 200px;
-    padding: 40px 40px 40px 0;
-}
-
-.row h2 {
-    margin: 0 1rem;
-}
-
-.row .inner {
-    margin: 0 1rem;  
-}
-
-ul {
-    margin: 0 0 2rem 0;
-}
-
-ul.icons li {
-  margin: 10px 0 10px 10px;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  background-color: white;
-  position: relative;
-  width: 50%;
-  height: 30%;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
-  padding: 0.5rem;
-}
-
-h3 {
-  font-size: 1.5rem;
-  text-decoration-line: underline;
-}
-
-ul.icons p {
-  font-style: italic;
-}
-
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-
-
-.fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: dodgerblue;
-  }
-
-/*Login*/
-.login-container nav {
-    font-size: 13px;
-}
-
-.loginform .form1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 20px;
-    border: none;
-    width: 200px;
-    line-height: 1rem;
-}
-
-/*Sign Up*/
-.signup-form {
-    line-height: 2rem;
-}
-
-.how-to-header-img {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: relative;
-    text-align: left;
-    overflow-x: hidden;
-    margin-bottom: 1rem;
-    width: 50%;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 20px;
-    border: none;
-    width: 200px;
-    line-height: 1.5rem;
-}
-
-/*Create*/
-div.create-container {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-/* div.image-left {
-		width: 50%;
-		background-color: #BABEFC;
-	}
-	div.content-right {
-	margin: 0 auto;
-    padding: 40px 0;
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-	}
-
-*/
-
 footer {
   height: 60px;
   background-color: #6C72FF;
@@ -378,33 +278,10 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-
 .tabs-container {
   width: 40%;
   height: 693px;
 }
-
-@media (max-width:800px) {
-  section.create-banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  } 
-  section.create-banner .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  section.create-banner img.how-to-img {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-  }
-  .loginbanner .loginform {
-    width: 70%;
-  }
 .tabs-container .topics {
   height: inherit;
   display: flex;
@@ -443,15 +320,25 @@ footer {
 }
 .cards-container .card {
   background-color: transparent;
+  margin-top: 20px;
   width: 100%;
-  height: inherit;
   border: none;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
 }
 .cards-container .card .headline {
   font-size: 25px;
-
+}
+.cards-container .card img.phone {
+  width: 35%;
+  height: 610px;
+  border-radius: 30px;
+  box-shadow: 10px 10px 5px;
+}
+.cards-container div.two-phones {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
