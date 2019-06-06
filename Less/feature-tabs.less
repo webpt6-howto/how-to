@@ -1,7 +1,9 @@
 .tabs-container {
    width: 40%;
+   height: 693px;
+   
     .topics {
-      height: 70vh;
+      height: inherit;
       display: flex;
       flex-direction: column;
       justify-content: space-evenly;
@@ -9,20 +11,25 @@
       .tab {
         width: 50%;
         color: black;
-        background-color: @orange;
-        font-size: 12px;
+        background-color: transparent;
+        font-size: 15px;
         letter-spacing: 2px;
         cursor: pointer;
         font-weight: bold;
-        border: black;
+        display: flex;
+        justify-content: center;
         &:hover {
           color: white;
         }
       }
       .active-tab {
-        background-color: @grey ;
-        color: black ;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:@grey;
+        font-size: 20px ;
         border: none;
+        height: 40px;
       }
     }
   }
