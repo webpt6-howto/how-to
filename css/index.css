@@ -185,8 +185,6 @@ header nav a {
   color: #E6E6E6;
   text-decoration: none;
 }
-
-
 header a.btn-login {
   background-color: #E6E6E6;
   border: #E6E6E6;
@@ -199,29 +197,6 @@ header a.btn-login {
   margin: 4px 2px;
   cursor: pointer;
 }
-footer {
-  height: 60px;
-  background-color: #6C72FF;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-body {
-  font-family: 'Bitter', serif;
-}
-h1 {
-  font-size: 40px;
-  font-weight: bold;
-  align-self: center;
-}
-h2 {
-  font-size: 30px;
-}
-div.wrapper {
-  width: 100%;
-  overflow-x: hidden;
-}
-
 section.header-banner {
   display: flex;
   align-items: stretch;
@@ -232,19 +207,9 @@ section.header-banner {
   overflow-x: hidden;
   height: 100vh;
 }
-
-.header-banner .content-left {
-    padding: 7rem 7rem 7rem 7rem;
-}
-
-section#second div.image-left {
-  width: 50%;
-  background-color: #BABEFC;
-}
 section.header-banner img.logo {
   width: 200px;
   padding: 40px 40px 40px 0;
-
 }
 section.header-banner div.content-left {
   margin: 0 auto;
@@ -265,22 +230,6 @@ section.header-banner .explore {
   color: #6C72FF;
   font-weight: bold;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-a.btn-signup {
-  background-color: #FFAE66;
-  border: #E6E6E6;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
 }
 section#second {
   display: flex;
@@ -292,130 +241,20 @@ section#second {
   overflow-x: hidden;
   height: 90vh;
   background-image: linear-gradient(to bottom right, #6C72FF, #FFAE66);
-
 }
-
-
-/*About*/
-.row {
-    line-height: 2rem;
-    justify-content: center;
-}
-.row .logo {
-    width: 200px;
-    padding: 40px 40px 40px 0;
-}
-
-.row h2 {
-    margin: 0 1rem;
-}
-
-.row .inner {
-    margin: 0 1rem;  
-}
-
-ul {
-    margin: 0 0 2rem 0;
-}
-
-
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
-}
-
-
-.fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: dodgerblue;
-  }
-
-/*Login*/
-.login-container nav {
-    font-size: 13px;
-}
-.login-form .form1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 20px;
-    border: none;
-    width: 200px;
-    line-height: 1rem;
-}
-
-/*Sign Up*/
-.signup-form {
-    line-height: 2rem;
-}
-
-.how-to-header-img {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: relative;
-    text-align: left;
-    overflow-x: hidden;
-    margin-bottom: 1rem;
-    width: 50%;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: space-between;
-    padding: 20px;
-    border: none;
-    width: 200px;
-    line-height: 1.5rem;
-}
-
-/*Create*/
-div.create-container {
-    width: 100%;
-    overflow-x: hidden;
-}
-
-section.create-banner {
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    justify-content: flex-end;
-    position: relative;
-    text-align: left;
-    overflow-x: hidden;
-    height: 100vh;
-}
-section.create-banner .form {
+/* div.image-left {
+		width: 50%;
+		background-color: #BABEFC;
+	}
+	div.content-right {
+	margin: 0 auto;
     padding: 40px 0;
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-}
-
-.form label {
-    text-align: start;
-}
-
-.logo {
-    width: 200px;
-    padding: 40px 40px 40px 0;
-}
-
-div.create-container img.how-to-img {
-    margin: 0 auto;
-    width: 50%;
-    object-fit: cover;
-}
+	}
 
 
 */
@@ -426,51 +265,3 @@ footer {
   justify-content: space-around;
   align-items: center;
 }
-
-/*Media Queries(Tablet)*/
-@media (max-width:800px) {
-.container {
-    width: 100%;
-  }
-  header nav {
-		justify-content: space-around;
-    margin-left: 0;
-  }
-  nav a {
-    margin: 20px;
-  }
-  section.header-banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  } 
-  section.header-banner div.content-left {
-    display: flex;
-    flex-direction: column;
-  }
-  section.header-banner img.how-to-header-img {
-    width: 100%;
-  }
-}
-
-@media (max-width:800px) {
-  section.create-banner {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  } 
-  section.create-banner .form {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-  }
-  section.create-banner img.how-to-img {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-  }
-}
-
