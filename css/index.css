@@ -318,6 +318,27 @@ ul {
     margin: 0 0 2rem 0;
 }
 
+ul.icons li {
+  margin: 10px 0 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  width: 50%;
+  height: 30%;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+  padding: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  text-decoration-line: underline;
+}
+
+ul.icons p {
+  font-style: italic;
+}
 
 ul.icons {
     cursor: default;
@@ -339,17 +360,6 @@ ul.icons {
     font-size: 13px;
 }
 
-.loginbanner .loginform {
-  margin: 10px 0 10px 10px;
-  border: 1px solid lightgrey;
-  border-radius: 10px;
-  background-color: white;
-  position: relative;
-  width: 20%;
-  height: 30%;
-  overflow: hidden;
-  box-shadow: 2px 2px 2px lightgrey;
-}
 .loginform .form1 {
     display: flex;
     flex-direction: column;
@@ -359,32 +369,6 @@ ul.icons {
     border: none;
     width: 200px;
     line-height: 1rem;
-}
-
-.loginform h2 {
-  margin-left: 1rem;
-  margin-top: 1rem;
-}
-
-.loginform .close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
-.loginform .expandButton {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  font-size: 12px;
-  color: grey;
-  cursor: pointer;
-  transform: translate(-50%);
-  background-color: white;
-}
-
-.loginform-open {
-  height: 150px;
 }
 
 /*Sign Up*/
@@ -509,6 +493,9 @@ footer {
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
+  }
+  .loginbanner .loginform {
+    width: 70%;
   }
 }
 
