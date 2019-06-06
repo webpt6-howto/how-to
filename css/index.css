@@ -396,7 +396,7 @@ ul.icons {
     padding: 20px;
     border: none;
     width: 200px;
-    line-height: 1.5rem;
+    line-height: 1rem;
 }
 
 /*Create*/
@@ -426,6 +426,11 @@ section.create-banner .form {
 
 .form label {
     text-align: start;
+    margin-top: 0.5rem;
+}
+
+.form h2 {
+  margin-bottom: 1rem;
 }
 
 .logo {
@@ -496,6 +501,9 @@ footer {
   }
   .loginbanner .loginform {
     width: 70%;
+  }
+  ul.icons li {
+    width: 92%;
   }
 }
 
