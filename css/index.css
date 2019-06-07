@@ -313,21 +313,87 @@ footer {
   height: 40px;
 }
 
+.tab-content .content {
+  margin: 10px 0 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  width: 50%;
+  height: 30%;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+  padding: 0.5rem;
+  }
 
-ul.icons {
-    cursor: default;
-    list-style: none;
-    padding-left: 0;
+  .cards-container {
+    display: block;
+    width: 60%;
+    height: 690px;
+    overflow: hidden;
+  }
+  .cards-container .card {
+    background-color: transparent;
+    margin-top: 20px;
+    width: 100%;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+  }
+  .cards-container .card .headline {
+    font-size: 25px;
+  }
+  .cards-container .card img.phone {
+    width: 35%;
+    height: 610px;
+    border-radius: 30px;
+    box-shadow: 10px 10px 5px;
+  }
+  .cards-container div.two-phones {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+  }
+
+.row {
+  line-height: 2rem;
+  justify-content: center;
+}
+.row .logo {
+  width: 200px;
+  padding: 40px 40px 40px 0;
+}
+
+.row h3 {
+  margin: 0 1rem;
+  text-decoration-line: none;
+}
+.row h2 {
+  font-size: 20px;
+  margin: 0 1rem;
+}
+
+.row p {
+  margin: 0 1rem;  
+  font-style: italic;
+}
+
+
+h3 {
+font-size: 1.5rem;
+text-decoration-line: underline;
 }
 
 
 .fa {
-    font-size: 30px;
-    width: 50px;
-    text-align: center;
-    text-decoration: none;
-    color: dodgerblue;
-  }
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: dodgerblue;
+}
 
 /*Login*/
 .login-container nav {
@@ -423,7 +489,7 @@ div.create-container img.how-to-img {
 footer {
   height: 60px;
   background-color: #6C72FF;
-
+}
 .cards-container {
   display: block;
   width: 60%;
@@ -504,8 +570,16 @@ footer {
   .loginbanner .loginform {
     width: 70%;
   }
-  ul.icons li {
+  .tab-content .content {
     width: 92%;
   }
 }
 
+@media (max-width:800px) {
+  .cards-container .card img.phone {
+    width: 100%;
+  }
+  .cards-container .card .button {
+    padding: 10px 32px;
+  }
+}

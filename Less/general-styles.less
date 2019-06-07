@@ -48,3 +48,37 @@ a.btn-signup {
 	margin: 4px 2px;
 	cursor: pointer;
 }
+
+.tab-navigator {
+    .tab-links {
+      margin-top: 20px;
+      display: flex;
+      justify-content: space-between;
+
+      .link {
+        padding: 20px 40px;
+        background: lightgray;
+        border: 1px solid black;
+        cursor: pointer;
+      }
+
+      // .link[data-tab='1'] {
+      //   color: red;
+      // }
+    }
+    .tab-content {
+      width: 100%;
+      margin-top: 20px;
+      background: lightgray;
+
+      .content {
+        padding: 20px;
+        border: 1px solid black;
+        display: none;
+      }
+
+      .change {
+        display: block;
+      }
+    }
+  }// tab navigator
