@@ -316,55 +316,7 @@ footer {
 }
 
 /*About*/
-.row {
-  line-height: 2rem;
-  justify-content: center;
-}
-.row .logo {
-  width: 200px;
-  padding: 40px 40px 40px 0;
-}
-
-.row h2 {
-  margin: 0 1rem;
-}
-
-.row .main-content {
-  margin: 0 1rem;  
-}
-
-ul {
-  margin: 0 0 2rem 0;
-}
-
-ul.icons li {
-margin: 10px 0 10px 10px;
-border: 1px solid lightgrey;
-border-radius: 10px;
-background-color: white;
-position: relative;
-width: 50%;
-height: 30%;
-overflow: hidden;
-box-shadow: 2px 2px 2px lightgrey;
-padding: 0.5rem;
-}
-
-h3 {
-font-size: 1.5rem;
-text-decoration-line: underline;
-}
-
-/* ul.icons p {
-font-style: italic;
-}
-
-ul.icons {
-  cursor: default;
-  list-style: none;
-  padding-left: 0; */
-  
-.tab-content .content {
+.tabcontent .content {
   margin: 10px 0 10px 10px;
   border: 1px solid lightgrey;
   border-radius: 10px;
@@ -376,6 +328,23 @@ ul.icons {
   box-shadow: 2px 2px 2px lightgrey;
   padding: 0.5rem;
   }
+  .tabcontent .content h4 {
+    margin: 0 1rem;
+    font-size: 18px;
+}
+
+.content {
+  margin: 10px 0 10px 10px;
+  border: 1px solid lightgrey;
+  border-radius: 10px;
+  background-color: white;
+  position: relative;
+  width: 50%;
+  height: 30%;
+  overflow: hidden;
+  box-shadow: 2px 2px 2px lightgrey;
+  padding: 0.5rem;
+}
 
   .cards-container {
     display: block;
@@ -422,7 +391,7 @@ ul.icons {
   text-decoration-line: none;
 }
 .row h2 {
-  font-size: 20px;
+  font-size: 30px;
   margin: 0 1rem;
 }
 
@@ -620,7 +589,7 @@ footer {
   .loginbanner .loginform {
     width: 70%;
   }
-  .tab-content .content {
+  .tabcontent .content {
     width: 92%;
   }
 }
