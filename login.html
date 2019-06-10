@@ -10,7 +10,7 @@
 
   <link href="https://fonts.googleapis.com/css?family=Bangers|Titillium+Web" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/index.css">
 </head>
   
@@ -18,7 +18,7 @@
   <div class="login-container">
     <header>
       <nav>
-            <a href="index.html">Home</a>
+            <a href="index.html"><button class="btn"><i class="fa fa-home"></i></button></a>
             <a href="sign up.html">Sign Up</a>
             <a href="create.html">Create</a>
       </nav>
@@ -26,18 +26,34 @@
     <section class="loginbanner">
         <img class="logo" src="img\howToLogo.png" alt="Logo">
     <img class="how-to-header-img" src="images\Life Hacks.jpg" alt="life-hack">
-      <section class="loginform">
-          <h2>Welcome Back!</h2>
-        <form class="form1" action="">
-          <label for="Email">Email:</label>
-          <input name="Email" id="email" type="text" placeholder="Email Please"><br>
-          <label for="Password">Password:</label>
-          <input name="Password" id="password" type="text" placeholder="Password Please"><br>
-          <ul class="actions stacked">
-              <li><a href="#" class="button big wide smooth-scroll-middle">Login</a></li>
-            </ul>
-        </form>
-      </section>
+    <h2>Welcome Back!</h2>
+<button onclick="document.getElementById('id01').style.display='block'">Login</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" 
+class="close" title="Close Modal">&times;</span>
+
+  <form class="modal-content animate" action="/action_page.php">
+    
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
       </section>
     <footer>
       <div class="footer-content">
