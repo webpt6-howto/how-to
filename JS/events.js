@@ -4,7 +4,7 @@ content.addEventListener('mouseenter', function(event) {
 
     setTimeout(function() {
         event.target.style.color = '#6C72FF';  
-    }, 300);
+    }, 100);
 }, false);
 
 content.addEventListener('mouseleave', function(event) {
@@ -17,9 +17,10 @@ content2.addEventListener('mouseenter', function(event) {
 
     setTimeout(function() {
         event.target.style.color = '#6C72FF';  
-    }, 300);
+    }, 100);
 }, false);
 
 content2.addEventListener('mouseleave', function(event) {
   event.target.style.color = 'black';
 });
+
