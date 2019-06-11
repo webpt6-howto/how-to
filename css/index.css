@@ -836,5 +836,9 @@ footer {
     width: 92%;
     margin: 20px;
   }
+  section.loginbanner .container .cancelbtn {
+    width: 92%;
+    margin: 20px;
+  }
 }
 
