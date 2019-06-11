@@ -145,6 +145,11 @@ div.container {
   width: 100%;
   overflow-x: hidden;
 }
+.index-container{
+  width: 100%;
+  overflow-x: hidden;
+  padding: none;
+}
 /* Button */
 .button {
   background-color: #6C72FF;
